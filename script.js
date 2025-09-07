@@ -5,6 +5,13 @@ function calculateBMI() {
 
 
 const weight = parseFloat(weightInput);
-    const height = parseFloat(heightInput); 
+    const heightCm = parseFloat(heightInput); 
+
+
+    let height = heightCm/100;
+
+    let bmi = weight/(height*height);
+
+    document.getElementById('result').innerText = `Your BMI is ${bmi.toFixed(2)}`;
 
 }
