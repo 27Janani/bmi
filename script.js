@@ -4,6 +4,7 @@ function calculateBMI() {
 
 
 
-
+const weight = parseFloat(weightInput);
+    const height = parseFloat(heightInput); 
 
 }
